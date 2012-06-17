@@ -1,6 +1,9 @@
 <% @page_title = "UserAuth | Login" -%>
-<div class= "User_Login_Form">
+<div class="User_Login_Form" xmlns="http://www.w3.org/1999/html">
 
+  <div>
+    <p>If you don't have an account, you can <%= link_to 'register.', new_user_path %> </p>
+  </div>
   <%= form_tag(:action => 'login_post') do %>
     <fieldset>
       <legend>Please Log In</legend>
@@ -11,7 +14,6 @@
       <p>Password:</br> <%= password_field_tag :password %></p>
       <%= submit_tag("Log In") %>
 
-      <%= link_to 'Register', new_user_path %>
 
     </fieldset>
   <% end %>
