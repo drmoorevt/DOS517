@@ -38,6 +38,16 @@ class AuthController < ApplicationController
     redirect_to :action => "login"
   end
 
+
+  def register
+
+  end
+
+  def register_post
+
+  end
+
+
   def index
     #authorized access page
     logger.info "Accessing user sessionid #{session[:user_id]}"

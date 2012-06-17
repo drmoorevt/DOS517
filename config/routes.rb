@@ -13,7 +13,8 @@ TestDos::Application.routes.draw do
   get "auth/logout"
 
   get "auth/index"
-
+  get "auth/register"
+  post "auth/register_post"
   post "auth/login_post"
 
   resources :users

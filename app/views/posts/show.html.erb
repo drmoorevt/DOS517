@@ -23,7 +23,7 @@
 <div class="comments">
 <% @post.comments.each do |c| %>
     <p>
-      <b><%=h c.author %> said:</b><br />
+      <b><%=h c.author %> said:</b>
       <%= time_ago_in_words(c.created_at) %> ago
     </p>
     <p><%=  c.title %></p>

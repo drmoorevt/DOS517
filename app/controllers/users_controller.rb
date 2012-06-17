@@ -1,12 +1,13 @@
 
 class UsersController < ApplicationController
   #filter action request for ADMIN login to specific methods
-  before_filter :has_admin_access , :only => [:index,:login_post]
+  #Admin can create users from this screen
+  before_filter :has_admin_access , :only => [:index,:new, :create]
   #filter action request for login
   before_filter :authorize , :except => [:login,:login_post]
 
 
-
+  # Only admin can list all users
   # GET /users
   # GET /users.json
   def index
