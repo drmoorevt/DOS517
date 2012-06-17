@@ -1,5 +1,12 @@
 TestDos::Application.routes.draw do
+  resources :comments
+
+
   resources :posts
+
+  #additional posts route
+
+  get "posts/get_popular_posts"
 
   get "auth/login"
 
@@ -8,7 +15,11 @@ TestDos::Application.routes.draw do
   get "auth/index"
 
   post "auth/login_post"
+
   resources :users
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

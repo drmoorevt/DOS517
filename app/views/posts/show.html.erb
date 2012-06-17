@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <b>Content:</b>
@@ -18,5 +18,41 @@
 </p>
 <% end %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+
+<h2>Comments</h2>
+
+<% @post.comments.each do |c| %>
+    <p>
+      <b><%=h c.author %> said:</b><br />
+      <%= time_ago_in_words(c.created_at) %> ago
+    </p>
+    <p><%=  c.title %></p>
+    <p>
+      <%=h c.content %>
+    </p>
+<% end %>
+
+
+    <%= form_tag(  :controller => 'comments') do |f| %>
+
+    <div>
+     <%= hidden_field_tag(:post_id,@post.id) %>
+
+
+      Author:<%= text_field_tag :author     %><br />
+
+      Title: <%= text_field_tag :title     %><br />
+      Content:  <%= text_field_tag :content     %><br />
+      <%= submit_tag("Save") %>
+
+    </div>
+
+
+<% end %>
+
+
+<% if !@post.user.nil? && @post.user.id == session[:user_id] %>
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+<% end %>
+
 <%= link_to 'Back', posts_path %>

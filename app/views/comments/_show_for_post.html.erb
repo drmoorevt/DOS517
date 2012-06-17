@@ -1,0 +1,25 @@
+<div class="post_comment">
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+  <p>
+    <b>Vote:</b>
+    <%= @post.vote %>
+  </p>
+
+  <%  if @post.user %>
+<p>
+  <b>User:</b>
+  <%= @post.user.username %>
+</p>
+
+<% end %>
+</div>
+

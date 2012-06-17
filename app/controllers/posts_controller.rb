@@ -1,5 +1,18 @@
 
 class PostsController < ApplicationController
+
+
+
+  def get_popular_posts
+
+
+    render :text => "show me some popular posts ....Please!"
+
+  end
+
+
+
+
   # GET /posts
   # GET /posts.json
   def index
@@ -16,6 +29,13 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
 
+    postid = -1
+    if @post
+      postid = @post.id
+    end
+
+    #GET comments for this post
+    @comments = Comment.find_all_by_post_id(postid)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
