@@ -1,14 +1,14 @@
+<p>
 
+ <h2>Title:<%= @post.title %></h2>
+</p>
 
 <p>
   <b>Content:</b>
   <%= @post.content %>
 </p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+
 
 
 <%  if @post.user %>
@@ -19,8 +19,8 @@
 <% end %>
 
 
-<h2>Comments</h2>
-
+<h3>Comments</h3>
+<div class="comments">
 <% @post.comments.each do |c| %>
     <p>
       <b><%=h c.author %> said:</b><br />
@@ -33,7 +33,7 @@
 <% end %>
 
 
-    <%= form_tag(  :controller => 'comments') do |f| %>
+<%= form_tag(  :controller => 'comments') do |f| %>
 
     <div>
      <%= hidden_field_tag(:post_id,@post.id) %>
@@ -50,6 +50,7 @@
 
 <% end %>
 
+</div>
 
 <% if !@post.user.nil? && @post.user.id == session[:user_id] %>
     <%= link_to 'Edit', edit_post_path(@post) %> |
