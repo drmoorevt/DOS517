@@ -5,6 +5,9 @@ class User < ActiveRecord::Base
   validates :email,  :presence => true
   validates :password,  :presence => true ,:confirmation => true,:on => :create #add password_confirmation #validate for create action
 
+  has_many :posts
+
+
   before_create :hashpassword
   OURSECRECTTOKEN = "dfgdfghoi3h45hgdlfghl4e3434g34g34"
 

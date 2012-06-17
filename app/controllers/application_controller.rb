@@ -4,6 +4,21 @@ class ApplicationController < ActionController::Base
   #filter action request for login
   before_filter :authorize , :except => [:login,:login_post]
 
+
+
+  def unauthorized
+    render :text => "You are not allowed to do that!!!"
+  end
+
+
+
+
+
+
+
+
+
+
   protected
   #ADD PROTECTED METHODS BELOW
 

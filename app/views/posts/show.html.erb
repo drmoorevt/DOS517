@@ -10,11 +10,13 @@
   <%= @post.title %>
 </p>
 
+
+<%  if @post.user %>
 <p>
   <b>User:</b>
-  <%= @post.user_id %>
+  <%= @post.user.username %>
 </p>
-
+<% end %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
