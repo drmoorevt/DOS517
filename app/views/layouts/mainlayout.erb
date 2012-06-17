@@ -27,7 +27,8 @@
          <li><%=  link_to "Profile", :controller => "users",:action => "show" %>  </li>
 
           <li><%= link_to 'LogOut', auth_logout_path %>    </li>
-
+     <% else %>
+           <li><%= link_to 'Login', auth_login_path %>    </li>
 
 
      <% end %>
