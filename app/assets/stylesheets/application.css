@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+.layouthelper{border:1px solid red;}
+.clearboth{clear: both;}
+
+#columns{padding: 20px;}
+
+#side{float:left; width: 150px;}
+#side li{padding-bottom: 10px;}
+#main{float: left; margin-left:20px;padding: 10px;min-width: 400px;min-height: 400px;}
+

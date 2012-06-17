@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  layout "mainlayout"
   protect_from_forgery
   #filter action request for login
   before_filter :authorize , :except => [:login,:login_post]

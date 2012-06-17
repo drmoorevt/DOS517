@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Back Channel App</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="body">
+
+ <div id="banner" class="layouthelper">
+   <%=  image_tag("logo.png") %>
+  <h1> <%=  @page_title || "Super Twity" %></h1>
+ </div>
+
+ <div id="columns" class="layouthelper">
+   <div id="side" class="layouthelper">
+     <% if @userrecentposts %>
+       <% hidden_div_if(@userrecentposts.items.empty?, :id=> "recentposts") do %>
+         <%=  render(:partial => "post", :object => @userrecentposts) %>
+       <% end %>
+     <% end %>
+     <% if session[:user_id] %>
+        <ul>
+         <li><%=  link_to "Profile", :controller => "users",:action => "show" %>  </li>
+          <li><%=  link_to "Posts", :controller => "posts",:action => "index" %>    </li>
+        </ul>
+
+
+
+     <% end %>
+
+   </div>
+   <div id="main" class="layouthelper">
+     <% if flash[:notice] %>
+         <p class="notice"><%= flash[:notice] %></p>
+     <% end %>
+     <% if flash[:error] %>
+         <p class="error"><%= flash[:error] %></p>
+     <% end %>
+
+     <%= yield :layout %>
+   </div>
+   <div class="clearboth"></div>
+ </div>
+
+
+</body>
+</html>
