@@ -11,6 +11,26 @@ class User < ActiveRecord::Base
   def has_same_password(checkpass)
     return self.password ==  Digest::MD5.hexdigest("-#{checkpass}#{OURSECRECTTOKEN}")
   end
+
+  #find user by name or email and then check password .
+  #Class method
+  def self.authenticate(username_or_email,pass)
+    @user = User.find_by_username( username_or_email)
+    if @user.nil?
+      @user = User.find_by_email(username_or_email)
+    end
+
+    #if we got user, we need to check password
+    if @user.nil?
+      return false
+    end
+    #check if password is right
+    if @user.has_same_password(pass)
+      return @user
+    end
+    return false
+  end
+
   protected
   def hashpassword
     self.password = Digest::MD5.hexdigest("-#{self.password}#{OURSECRECTTOKEN}")

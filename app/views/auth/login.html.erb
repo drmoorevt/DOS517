@@ -1,0 +1,21 @@
+<% @page_title = "UserAuth | Login" -%>
+<div class= "User_Login_Form">
+  <% if flash[:notice] %>
+      <p class="notice"><%= flash[:notice] %></p>
+  <% end %>
+  <% if flash[:error] %>
+      <p class="error"><%= flash[:error] %></p>
+  <% end %>
+  <%= form_tag(:action => 'login_post') do %>
+    <fieldset>
+      <legend>Please Log In</legend>
+
+
+
+      <p>Username or Email:</br> <%= text_field_tag(:username_or_email) %></p>
+      <p>Password:</br> <%= password_field_tag :password %></p>
+      <%= submit_tag("Log In") %>
+
+    </fieldset>
+  <% end %>
+</div>

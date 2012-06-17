@@ -1,0 +1,21 @@
+<div id="logindiv">
+  <%= link_to 'LogOut', auth_logout_path %>
+</div>
+<% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+<% if flash[:error] %>
+    <p class="error"><%= flash[:error] %></p>
+<% end %>
+<div id="maincontent">
+
+  <h1>Welcome</h1>
+  <p>Find me in app/views/auth/index.html.erb</p>
+  <p>Authorized access here !!!</p>
+
+ <% if @hasadmin %>
+ <p>Admin welcome!!!!</p>
+  <% end %>
+
+</div>
+

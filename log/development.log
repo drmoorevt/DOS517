@@ -810,3 +810,1455 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:31:48 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Compiled admin.css  (3ms)  (pid 9768)
+Compiled application.css  (36ms)  (pid 9768)
+Compiled admin.js  (110ms)  (pid 9768)
+Compiled application.js  (127ms)  (pid 9768)
+Completed 200 OK in 402ms (Views: 392.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /admin.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /admin.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:44:18 -0400
+Served asset /application.js - 304 Not Modified (76ms)
+
+
+Started GET "/admins" for 127.0.0.1 at 2012-06-16 23:50:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/admins"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-16 23:50:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:50:21 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-16 23:52:19 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:52:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:52:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:52:20 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:57:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 11.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-06-16 23:58:23 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "user"=>{"username"=>"omercan", "email"=>"cansizoc@gmail.com", "first_name"=>"omer", "last_name"=>"cansizoglu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "description"=>"", "admin_flag"=>"1"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password`
+  [1m[36mSQL (18.0ms)[0m  [1mINSERT INTO "users" ("admin_flag", "created_at", "description", "email", "first_name", "last_name", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin_flag", true], ["created_at", Sun, 17 Jun 2012 03:58:23 UTC +00:00], ["description", ""], ["email", "cansizoc@gmail.com"], ["first_name", "omer"], ["last_name", "cansizoglu"], ["password", "8928a030b38c2d5c286cb2bfb53bcca9"], ["updated_at", Sun, 17 Jun 2012 03:58:23 UTC +00:00], ["username", "omercan"]]
+  [1m[35m (97.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 121ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-06-16 23:58:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:23 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:24 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-16 23:58:35 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:35 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:35 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-16 23:58:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/assets?action=login_post&controller=auth" for 127.0.0.1 at 2012-06-16 23:58:44 -0400
+Served asset  - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [POST] "/assets"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started POST "/assets?action=login_post&controller=auth" for 127.0.0.1 at 2012-06-16 23:59:41 -0400
+Served asset  - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [POST] "/assets"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/assets?action=login_post&controller=auth" for 127.0.0.1 at 2012-06-17 00:02:28 -0400
+Served asset  - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [POST] "/assets"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/assets?action=login_post&controller=auth" for 127.0.0.1 at 2012-06-17 00:03:05 -0400
+Served asset  - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [POST] "/assets"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:04:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:05:06 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "username_or_email"=>"omercan", "password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `authenticate' for #<Class:0x3e3da38>):
+  app/controllers/auth_controller.rb:12:in `login_post'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:06:07 -0400
+
+LoadError (cannot load such file -- C:/Users/ocansizoglu/RubymineProjects/DOS517/app/controllers/User):
+  app/controllers/auth_controller.rb:1:in `require_relative'
+  app/controllers/auth_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:06:38 -0400
+
+LoadError (cannot load such file -- C:/Users/ocansizoglu/RubymineProjects/DOS517/app/controllers/User):
+  app/controllers/auth_controller.rb:1:in `require_relative'
+  app/controllers/auth_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "username_or_email"=>"omercan", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'omercan' LIMIT 1
+user logins omercan
+Redirected to http://localhost:3000/auth/index
+Completed 302 Found in 91ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:07:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:08:18 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:08:18 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:08:19 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:09:48 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:09:49 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2012-06-17 00:09:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=index):
+  app/controllers/users_controller.rb:17:in `show'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.0ms)
+
+
+Started GET "/users/index/1" for 127.0.0.1 at 2012-06-17 00:10:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/index/1"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:10 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "user"=>{"username"=>"normaluser", "email"=>"normal", "first_name"=>"normal", "last_name"=>"normal", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "description"=>"rer", "admin_flag"=>"0"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password`
+  [1m[36mSQL (18.0ms)[0m  [1mINSERT INTO "users" ("admin_flag", "created_at", "description", "email", "first_name", "last_name", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin_flag", false], ["created_at", Sun, 17 Jun 2012 04:10:48 UTC +00:00], ["description", "rer"], ["email", "normal"], ["first_name", "normal"], ["last_name", "normal"], ["password", "8928a030b38c2d5c286cb2bfb53bcca9"], ["updated_at", Sun, 17 Jun 2012 04:10:48 UTC +00:00], ["username", "normaluser"]]
+  [1m[35m (79.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 104ms (ActiveRecord: 97.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:49 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:49 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:10:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:11:01 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:11:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:11:01 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:11:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:11:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:11:50 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined local variable or method `auth_logout' for #<#<Class:0x439a9e8>:0x3ceb788>):
+    1: <div id="logindiv">
+    2:   <%= link_to 'LogOut', auth_logout %>
+    3: </div>
+    4: 
+    5: <div id="maincontent">
+  app/views/auth/index.html.erb:2:in `_app_views_auth_index_html_erb___754585179_32009100'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:13:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/logout" for 127.0.0.1 at 2012-06-17 00:13:42 -0400
+Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000login
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/logout" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/auth/login?notice=You+are+logged+out%21
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login?notice=You+are+logged+out%21" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Processing by AuthController#login as HTML
+  Parameters: {"notice"=>"You are logged out!"}
+  Rendered auth/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:14:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/login?notice=You+are+logged+out!" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Processing by AuthController#login as HTML
+  Parameters: {"notice"=>"You are logged out!"}
+  Rendered auth/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:21 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "username_or_email"=>"omercan", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'omercan' LIMIT 1
+user logins omercan
+Redirected to http://localhost:3000/auth/index
+Completed 302 Found in 17ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/logout" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/auth/login?notice=You+are+logged+out%21
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login?notice=You+are+logged+out%21" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Processing by AuthController#login as HTML
+  Parameters: {"notice"=>"You are logged out!"}
+  Rendered auth/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:25:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "username_or_email"=>"omercan", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'omercan' LIMIT 1[0m
+user logins omercan
+Redirected to http://localhost:3000/auth/index
+Completed 302 Found in 17ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Processing by AuthController#index as HTML
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/logout" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/auth/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 00:26:11 -0400
+Served asset /admin.js - 304 Not Modified (0ms)

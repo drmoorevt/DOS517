@@ -1,4 +1,11 @@
 TestDos::Application.routes.draw do
+  get "auth/login"
+
+  get "auth/logout"
+
+  get "auth/index"
+
+  post "auth/login_post"
   resources :users
 
   # The priority is based upon order of creation:
@@ -42,9 +49,9 @@ TestDos::Application.routes.draw do
   #   end
 
   # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
+  #   namespace :auth do
+  #     # Directs /auth/products/* to Admin::ProductsController
+  #     # (app/controllers/auth/products_controller.rb)
   #     resources :products
   #   end
 
