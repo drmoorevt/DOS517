@@ -80,7 +80,8 @@ class CommentsController < ApplicationController
 
     @comment.title =  params[:title]
     @comment.content =  params[:content]
-
+    @comment.post_id = params[:post_id]
+    @comment.author = params[:author]
     #add userid to comment if logged in
     if session[:user_id]
       @comment.user_id = session[:user_id]
