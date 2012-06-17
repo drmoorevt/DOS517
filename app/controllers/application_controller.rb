@@ -1,13 +1,11 @@
 class ApplicationController < ActionController::Base
   layout "mainlayout"
   protect_from_forgery
-  #filter action request for login
-  before_filter :authorize , :except => [:login,:login_post]
 
 
 
   def unauthorized
-    render :text => "You are not allowed to do that!!!"
+    render :text => "You are not allowed to do that!!! #{flash[:notice]}"
   end
 
 
@@ -22,6 +20,7 @@ class ApplicationController < ActionController::Base
   protected
   #ADD PROTECTED METHODS BELOW
 
+
   #it will be called from action filter
   def authorize
     unless User.find_by_id(session[:user_id])
@@ -29,6 +28,14 @@ class ApplicationController < ActionController::Base
       session[:return_to] =   request.fullpath
       logger.info "request refer #{request.fullpath}"
       redirect_to :controller => "auth", :action => "login"
+    end
+  end
+
+  def has_admin_access
+    user = User.find_by_id(session[:user_id])
+    if user.nil? || user.admin_flag != true
+       logger.info "User is not admin #{session[:user_id]}"
+       redirect_to  "unauthorized"
     end
   end
 

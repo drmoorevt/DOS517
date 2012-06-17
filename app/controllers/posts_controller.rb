@@ -1,6 +1,7 @@
 
 class PostsController < ApplicationController
 
+  before_filter :authorize , :only => [:new,:edit,:create,:update,:destroy]
 
 
   def get_popular_posts

@@ -1,6 +1,9 @@
 
 class AuthController < ApplicationController
 
+  #filter action request for login
+  before_filter :authorize , :only => [:index]
+
   def login
 
   end
@@ -36,7 +39,7 @@ class AuthController < ApplicationController
   end
 
   def index
-    #auth access page
+    #authorized access page
     logger.info "Accessing user sessionid #{session[:user_id]}"
     @hasadmin = session[:user_admin] == true
   end

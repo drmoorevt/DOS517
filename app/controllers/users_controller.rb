@@ -1,5 +1,12 @@
 
 class UsersController < ApplicationController
+  #filter action request for ADMIN login to specific methods
+  before_filter :has_admin_access , :only => [:index,:login_post]
+  #filter action request for login
+  before_filter :authorize , :except => [:login,:login_post]
+
+
+
   # GET /users
   # GET /users.json
   def index
@@ -36,6 +43,18 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+    secure_user_access
+  end
+
+  def secure_user_access
+    if !session[:user_admin]
+      #not admin so check if userid is same as this object user is editing
+      #if not redirect to unauth
+      if @user.id != session[:user_id]
+        flash[:notice] = "Not admin and not same user"
+        redirect_to :action => "unauthorized"
+      end
+    end
   end
 
   # POST /users
@@ -58,7 +77,7 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-
+    secure_user_access
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -74,6 +93,7 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user = User.find(params[:id])
+    secure_user_access
     @user.destroy
 
     respond_to do |format|
