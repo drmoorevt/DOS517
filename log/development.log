@@ -11839,3 +11839,1109 @@ ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
 
 
   Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2012-06-17 15:44:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Processing by AuthController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/mainlayout (1.5ms)
+Completed 200 OK in 58ms (Views: 39.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:21 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:44:22 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:44:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:44:22 -0400
+Served asset /logo.png - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:55:43 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered users/_form.html.erb (37.5ms)
+  Rendered users/new.html.erb within layouts/mainlayout (40.0ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x41e73e8>:0x41ed958>):
+    47:     <%= f.text_area :description %>
+    48:   </div>
+    49:         <% end %>
+    50:     <% if user.admin_flag %>
+    51:   <div class="field">
+    52:     <%= f.label :admin_flag %><br />
+    53:     <%= f.check_box :admin_flag %>
+  app/views/users/_form.html.erb:50:in `block in _app_views_users__form_html_erb__943968277_34573920'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__943968277_34573920'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___964987818_33036696'
+  app/controllers/users_controller.rb:38:in `new'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered users/_form.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/mainlayout (9.0ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:55:58 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 15:56:11 -0400
+Processing by AuthController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/mainlayout (1.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:11 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:11 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /logo.png - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:56:12 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Processing by AuthController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Accessing user sessionid 2
+  Rendered auth/index.html.erb within layouts/mainlayout (1.0ms)
+Completed 200 OK in 48ms (Views: 17.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:57:02 -0400
+Served asset /logo.png - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-06-17 15:57:07 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/mainlayout (4.0ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:07 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:07 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:07 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:07 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:57:08 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered users/_form.html.erb (7.0ms)
+  Rendered users/new.html.erb within layouts/mainlayout (9.5ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:57:10 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/logout" for 127.0.0.1 at 2012-06-17 15:57:22 -0400
+Processing by AuthController#logout as HTML
+Redirected to http://localhost:3000/auth/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-17 15:57:22 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/mainlayout (28.5ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined local variable or method `users_new_path' for #<#<Class:0x4055808>:0x375d530>):
+    10:       <p>Username or Email:</br> <%= text_field_tag(:username_or_email) %></p>
+    11:       <p>Password:</br> <%= password_field_tag :password %></p>
+    12:       <%= submit_tag("Log In") %>
+    13:       <li><%= link_to 'Register', users_new_path %>    </li>
+    14: 
+    15: 
+    16:     </fieldset>
+  app/views/auth/login.html.erb:13:in `block in _app_views_auth_login_html_erb___263333374_30102240'
+  app/views/auth/login.html.erb:4:in `_app_views_auth_login_html_erb___263333374_30102240'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.5ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/mainlayout (2.0ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:58:01 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:58:04 -0400
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+User is not admin 
+Redirected to http://localhost:3000unauthorized
+Filter chain halted as :has_admin_access rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:58:04 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+User is not admin 
+Redirected to http://localhost:3000unauthorized
+Filter chain halted as :has_admin_access rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-06-17 15:58:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/new.html.erb within layouts/mainlayout (26.0ms)
+Completed 200 OK in 48ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:58:32 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-06-17 15:59:01 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "user"=>{"username"=>"testuser", "email"=>"testff", "first_name"=>"omer", "last_name"=>"can", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "users" ("admin_flag", "created_at", "description", "email", "first_name", "last_name", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin_flag", nil], ["created_at", Sun, 17 Jun 2012 19:59:01 UTC +00:00], ["description", nil], ["email", "testff"], ["first_name", "omer"], ["last_name", "can"], ["password", "8928a030b38c2d5c286cb2bfb53bcca9"], ["updated_at", Sun, 17 Jun 2012 19:59:01 UTC +00:00], ["username", "testuser"]]
+  [1m[35m (207.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 217ms (ActiveRecord: 208.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2012-06-17 15:59:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+request refer /users/4
+Redirected to http://localhost:3000/auth/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 35ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-17 15:59:01 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/mainlayout (2.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:59:02 -0400
+Served asset /logo.png - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8nAouTq8m9NcRhbxbTHTVm4WikdQW9beTZYvsgw3a4=", "username_or_email"=>"testuser", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'testuser' LIMIT 1
+user logins testuser return to /users/4
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered users/show.html.erb within layouts/mainlayout (0.5ms)
+Completed 200 OK in 31ms (Views: 12.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-17 15:59:11 -0400
+Served asset /logo.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)

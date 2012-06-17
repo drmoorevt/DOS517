@@ -2,9 +2,9 @@
 class UsersController < ApplicationController
   #filter action request for ADMIN login to specific methods
   #Admin can create users from this screen
-  before_filter :has_admin_access , :only => [:index,:new, :create]
+  before_filter :has_admin_access , :only => [:index ]
   #filter action request for login
-  before_filter :authorize , :except => [:login,:login_post]
+  before_filter :authorize , :except => [:login,:login_post,:new,:create]
 
 
   # Only admin can list all users

@@ -1,7 +1,7 @@
 
 class AuthController < ApplicationController
 
-  #filter action request for login
+  #filter action request for login will only prevent access to index page.
   before_filter :authorize , :only => [:index]
 
   def login
@@ -31,7 +31,8 @@ class AuthController < ApplicationController
     end
 
   end
-
+  #redirect to login with message
+  #clear session info
   def logout
     clear_session
     flash[:notice] ="You are logged out!"
@@ -39,13 +40,6 @@ class AuthController < ApplicationController
   end
 
 
-  def register
-
-  end
-
-  def register_post
-
-  end
 
 
   def index

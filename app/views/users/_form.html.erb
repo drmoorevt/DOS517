@@ -39,14 +39,23 @@
   </div>
 
   <% end %>
+
+    <% if !@user.id.nil? %>
+
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
-  <div class="field">
+        <% end %>
+  <% if session[:user_admin] %>
+
+   <div class="field">
     <%= f.label :admin_flag %><br />
     <%= f.check_box :admin_flag %>
   </div>
+
+        <% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
