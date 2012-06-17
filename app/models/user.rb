@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :admin_flag, :description, :email, :first_name, :last_name, :password, :username
+  attr_accessible :admin_flag, :description, :email, :first_name, :last_name, :password, :username ,:password_confirmation
 
   validates :username,  :presence => true
   validates :email,  :presence => true
@@ -13,6 +13,6 @@ class User < ActiveRecord::Base
   end
   protected
   def hashpassword
-    password = Digest::MD5.hexdigest("-#{checkpass}#{OURSECRECTTOKEN}")
+    self.password = Digest::MD5.hexdigest("-#{self.password}#{OURSECRECTTOKEN}")
   end
 end

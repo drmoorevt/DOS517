@@ -27,10 +27,18 @@
     <%= f.label :last_name %><br />
     <%= f.text_field :last_name %>
   </div>
+
+  <% if @user.id.nil? %>
   <div class="field">
     <%= f.label :password %><br />
     <%= f.text_field :password %>
   </div>
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.text_field :password_confirmation %>
+  </div>
+
+  <% end %>
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
