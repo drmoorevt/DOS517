@@ -1,9 +1,21 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-
+  #filter action request for login
+  before_filter :authorize , :except => [:login,:login_post]
 
   protected
   #ADD PROTECTED METHODS BELOW
+
+  #it will be called from action filter
+  def authorize
+    unless User.find_by_id(session[:user_id])
+      flash[:notice] = "Please log in to access this page"
+      session[:return_to] =   request.fullpath
+      logger.info "request refer #{request.fullpath}"
+      redirect_to :controller => "auth", :action => "login"
+    end
+  end
+
   def set_session_for_user(user)
     if user
       session[:user_id] = user.id

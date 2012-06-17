@@ -1,4 +1,6 @@
 TestDos::Application.routes.draw do
+  resources :posts
+
   get "auth/login"
 
   get "auth/logout"

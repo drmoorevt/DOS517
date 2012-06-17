@@ -12,9 +12,16 @@ class AuthController < ApplicationController
       user = User.authenticate(params[:username_or_email],params[:password])
       if user
           #record into session
-        logger.info "user logins #{params[:username_or_email]}"
+        logger.info "user logins #{params[:username_or_email]} return to #{session[:return_to]}"
         set_session_for_user(user)
-        redirect_to :action => "index"
+        if session[:return_to].nil?
+          redirect_to :action => "index"
+        else
+          redirectpath = session[:return_to]
+          session[:return_to] = nil
+          redirect_to redirectpath
+        end
+
       else
         redirect_to "login", :notice => 'Oops! Your password is not right!'
       end
