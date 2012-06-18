@@ -1,5 +1,7 @@
 
 class CommentsController < ApplicationController
+  #Admin can see list of comments, delete comments
+  before_filter :has_admin_access , :only => [:index,:destroy ]
 
 
 

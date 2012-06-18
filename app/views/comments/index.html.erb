@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Content</th>
     <th>Title</th>
+    <th>Content</th>
     <th>User</th>
     <th>Vote</th>
     <th>Post</th>
@@ -14,11 +14,14 @@
 
 <% @comments.each do |comment| %>
   <tr>
-    <td><%= comment.content %></td>
     <td><%= comment.title %></td>
+    <td><%= comment.content %></td>
+
     <td><%= comment.user_id %></td>
     <td><%= comment.vote %></td>
-    <td><%= comment.post_id %></td>
+    <td>
+      <%= comment.post.title %>
+    </td>
 
     <td><%= link_to 'Show', comment %></td>
     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
