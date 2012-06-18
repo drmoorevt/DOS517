@@ -1,45 +1,6 @@
 <h1>Listing posts</h1>
 
-<table>
-  <tr>
-    <th>Content</th>
-    <th>Title</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-  <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.content %></td>
-        <td><%= post.title %></td>
-        <td>
-          <% if post.user && post.user.username %>
-
-
-              <%= post.user.username %>
-          <% end %>
-        </td>
-
-        <td><%= link_to 'Show', post %></td>
-
-        <td>
-        <% if session[:user_id] %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-        <% end %>
-        </td>
-
-        <td>
-        <% if session[:user_admin] %>
-
-          <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
-        <% end %>
-        </td>
-
-      </tr>
-  <% end %>
-</table>
+<%= render 'sharedindex' %>
 
 <br/>
 

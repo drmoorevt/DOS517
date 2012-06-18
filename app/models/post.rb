@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
   attr_accessible :content, :title, :user_id
+  #populate from query
+  attr_accessible :vote
   belongs_to :user
   #delete related comments if we delete this post
   has_many :comments  , :dependent => :destroy

@@ -1,0 +1,43 @@
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+
+    <th>User</th>
+    <th>Vote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td>
+          <% if post.user && post.user.username %>
+
+
+              <%= post.user.username %>
+          <% end %>
+        </td>
+           <td><%=  post.vote %></td>
+        <td><%= link_to 'Show', post %></td>
+
+        <td>
+        <% if session[:user_id] %>
+          <%= link_to 'Edit', edit_post_path(post) %>
+        <% end %>
+        </td>
+
+        <td>
+        <% if session[:user_admin] %>
+
+          <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
+        <% end %>
+        </td>
+
+      </tr>
+  <% end %>
+</table>
