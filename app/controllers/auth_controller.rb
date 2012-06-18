@@ -51,11 +51,7 @@ class AuthController < ApplicationController
   end
 
 
-  def get_popular_posts
 
-    @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
-      order by vote desc, created_at desc
- ")
 
-  end
+
 end

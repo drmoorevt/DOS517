@@ -9,12 +9,12 @@
 <% end %>
 <div id="maincontent">
 
-  <h1>Welcome</h1>
+  <h1>Main page to show after login</h1>
   <p>Find me in app/views/auth/index.html.erb</p>
   <p>Authorized access here !!!</p>
 
  <% if @hasadmin %>
- <p>Admin welcome!!!!</p>
+ <p>Welcome Admin! You have admin access.</p>
   <% end %>
 
 
@@ -22,6 +22,6 @@
 
     <%= render 'posts/sharedindex' %>
   </div>
-
+  <%= link_to 'New Post', new_post_path %>
 </div>
 

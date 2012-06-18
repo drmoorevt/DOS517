@@ -25,13 +25,17 @@
      <% if session[:user_id] %>
 
          <li><%=  link_to "Profile", :controller => "users",:action => "show" %>  </li>
+        <% if session[:user_admin] %>
+           <li><%=  link_to "Users", :controller => "users",:action => "index" %>  </li>
+        <% end %>
 
-          <li><%= link_to 'LogOut', auth_logout_path %>    </li>
+     <li><%= link_to 'LogOut', auth_logout_path %>    </li>
      <% else %>
            <li><%= link_to 'Login', auth_login_path %>    </li>
 
 
      <% end %>
+
      </ul>
 
    </div>

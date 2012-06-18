@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    get_popular_posts
 
     respond_to do |format|
       format.html # index.html.erb
