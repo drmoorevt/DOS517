@@ -61,7 +61,11 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+
+
     @user = User.new(params[:user])
+
+
 
     respond_to do |format|
       if @user.save
@@ -73,6 +77,7 @@ class UsersController < ApplicationController
       end
     end
   end
+
 
   # PUT /users/1
   # PUT /users/1.json

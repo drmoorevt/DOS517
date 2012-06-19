@@ -22,19 +22,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <file leaf-file-name="login.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/auth/login.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="54" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.44715446">
+            <state line="19" column="47" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.423077">
+              <folding>
+                <marker date="1339974653592" expanded="true" signature="104:529" placeholder="..." />
+                <marker date="1339974653592" expanded="true" signature="113:214" placeholder="..." />
+                <marker date="1339974653592" expanded="true" signature="275:510" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="20" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/auth/login.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="47" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.423077">
+            <state line="4" column="60" selection-start="281" selection-end="281" vertical-scroll-proportion="0.13465346">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="1" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,8 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/get_popular_posts.html.erb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb" />
         <option value="$PROJECT_DIR$/app/views/auth/index.html.erb" />
@@ -70,6 +90,8 @@
         <option value="$PROJECT_DIR$/app/views/comments/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/auth_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -637,13 +659,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="80" selection-start="2426" selection-end="2429" vertical-scroll-proportion="-6.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="26" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
@@ -721,16 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
+        <state line="37" column="54" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.44715446">
           <folding />
         </state>
       </provider>
@@ -738,13 +746,31 @@
     <entry file="file://$PROJECT_DIR$/app/views/auth/login.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="47" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.423077">
+          <folding>
+            <marker date="1339974653592" expanded="true" signature="104:529" placeholder="..." />
+            <marker date="1339974653592" expanded="true" signature="113:214" placeholder="..." />
+            <marker date="1339974653592" expanded="true" signature="275:510" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="54" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.44715446">
+        <state line="60" column="1" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="60" selection-start="281" selection-end="281" vertical-scroll-proportion="0.13465346">
           <folding />
         </state>
       </provider>
