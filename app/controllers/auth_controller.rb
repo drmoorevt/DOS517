@@ -28,7 +28,7 @@ class AuthController < ApplicationController
 
       else
         flash[:notice] = 'Oops! Your password is not right!'
-        redirect_to "login"
+        redirect_to :action => "login"
       end
     end
 
