@@ -31,11 +31,11 @@
   <% if @user.id.nil? %>
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.text_field :password %>
+    <%= password_field(:user, :password, :size => 20) %>
   </div>
     <div class="field">
       <%= f.label :password_confirmation %><br />
-      <%= f.text_field :password_confirmation %>
+      <%= password_field(:user, :password_confirmation, :size => 20) %>
   </div>
 
   <% end %>
