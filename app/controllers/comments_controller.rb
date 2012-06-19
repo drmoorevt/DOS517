@@ -80,7 +80,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = Comment.new
 
-    @comment.title =  params[:title]
+
     @comment.content =  params[:content]
     @comment.post_id = params[:post_id]
     @comment.author = params[:author]

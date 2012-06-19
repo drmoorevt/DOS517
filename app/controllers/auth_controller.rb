@@ -12,6 +12,7 @@ class AuthController < ApplicationController
 
 
     if request.post?
+
       user = User.authenticate(params[:username_or_email],params[:password])
       if user
           #record into session
@@ -26,7 +27,8 @@ class AuthController < ApplicationController
         end
 
       else
-        redirect_to "login", :notice => 'Oops! Your password is not right!'
+        flash[:notice] = 'Oops! Your password is not right!'
+        redirect_to "login"
       end
     end
 

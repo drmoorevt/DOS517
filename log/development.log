@@ -19027,3 +19027,207 @@ ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
 
 
   Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/index" for 127.0.0.1 at 2012-06-19 00:06:07 -0400
+Connecting to database specified by database.yml
+Processing by AuthController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+request refer /auth/index
+Redirected to http://localhost:3000/auth/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 439ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2012-06-19 00:06:09 -0400
+Processing by AuthController#login as HTML
+  Rendered auth/login.html.erb within layouts/mainlayout (20.0ms)
+Completed 200 OK in 714ms (Views: 714.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:09 -0400
+Served asset /application.css - 200 OK (30ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:09 -0400
+Served asset /admin.css - 200 OK (32ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /comments.css - 200 OK (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /posts.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /jquery.js - 200 OK (69ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /admin.js - 200 OK (4ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /comments.js - 200 OK (5ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /posts.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /users.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /application.js - 200 OK (81ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-06-19 00:06:10 -0400
+Served asset /logo.png - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo.png"):
+  actionpack (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.5) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.5) lib/rails/engine.rb:479:in `call'
+  railties (3.2.5) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:06:26 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:07:11 -0400
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Redirected to http://localhost:3000login
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:07:41 -0400
+Connecting to database specified by database.yml
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Redirected to http://localhost:3000login
+
+
+Started POST "/auth/login_post" for 127.0.0.1 at 2012-06-19 00:09:38 -0400
+Connecting to database specified by database.yml
+Processing by AuthController#login_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qgeGnTKE5Y3M2Y0i7KfVHSOrlWt6Azqn1jqCO/vWg0=", "username_or_email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = '' LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Redirected to http://localhost:3000login
+Completed 302 Found in 87708ms (ActiveRecord: 33.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120616201622)
+Migrating to CreatePosts (20120617042831)
+Migrating to CreateComments (20120617052739)
+Migrating to AddPostIdToComments (20120617053234)
+Migrating to AddAuthorToComments (20120617054839)
+Migrating to RemoveTitleFromComment (20120619040354)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (22.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120619040354')
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
