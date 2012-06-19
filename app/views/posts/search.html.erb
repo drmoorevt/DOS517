@@ -1,4 +1,3 @@
-
 <table>
   <tr>
     <form action='/posts'>
@@ -26,20 +25,20 @@
               <%= post.user.username %>
           <% end %>
         </td>
-           <td><%=  post.vote %></td>
+        <td><%=  post.vote %></td>
         <td><%= link_to 'Show', post %></td>
 
         <td>
-        <% if session[:user_id] %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-        <% end %>
+          <% if session[:user_id] %>
+              <%= link_to 'Edit', edit_post_path(post) %>
+          <% end %>
         </td>
 
         <td>
-        <% if session[:user_admin] %>
+          <% if session[:user_admin] %>
 
-          <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
-        <% end %>
+              <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
+          <% end %>
         </td>
 
       </tr>

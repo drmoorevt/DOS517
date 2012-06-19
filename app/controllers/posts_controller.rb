@@ -3,12 +3,6 @@ class PostsController < ApplicationController
 
   before_filter :authorize , :only => [:new,:edit,:create,:update,:destroy]
 
-
-
-
-
-
-
   # GET /posts
   # GET /posts.json
   def index
@@ -102,6 +96,17 @@ class PostsController < ApplicationController
       logger.warn "Unauthorized access!"
       redirect_to "unauthorized"
     end
+  end
 
+  def search
+    if params[:query]
+      @posts = Post.search(params[:query])
+    else
+      @posts = []
+    end
+    respond_to do |format|
+      format.html # search.html.erb
+      format.json { render json: @posts }
+    end
   end
 end
