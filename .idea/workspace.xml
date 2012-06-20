@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a2fe75d-a449-49c2-8792-a952e2b7c669" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/posts/_search.html.erb" />
-      <change type="MOVED" beforePath="C:\Users\ocansizoglu\RubymineProjects\DOS517\app\views\posts\search.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/search_posts.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_search.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_search.html.erb" />
     </list>
     <ignored path="TestDos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6101142">
+            <state line="23" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-14.96">
               <folding />
             </state>
           </provider>
@@ -50,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_search.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_search.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="41" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.2692308">
+            <state line="3" column="52" selection-start="100" selection-end="100" vertical-scroll-proportion="0.083333336">
               <folding />
             </state>
           </provider>
@@ -151,10 +143,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/search.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/_search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/search_posts.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_search.html.erb" />
       </list>
     </option>
   </component>
@@ -963,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_search.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="45" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
@@ -1000,7 +985,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6101142">
+        <state line="23" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-14.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="52" selection-start="100" selection-end="100" vertical-scroll-proportion="0.083333336">
           <folding />
         </state>
       </provider>
