@@ -12,7 +12,9 @@ class UsersControllerTest < ActionController::TestCase
     @user = users(:one)
   end
 
-  test "should get index" do
+  test "should get index for admin only" do
+    @user = users(:two)
+    session[:user_id] = @user.id
     get :index
     assert_response :success
     assert_not_nil assigns(:users)
@@ -26,7 +28,7 @@ class UsersControllerTest < ActionController::TestCase
   test "should create user" do
    p @user
     assert_difference('User.count') do
-      post :create, user: { admin_flag: @user.admin_flag, description: @user.description, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password,password_confirmation: @user.password, username: @user.username }
+      post :create, user: { admin_flag: @user.admin_flag, description: @user.description, email: 'anotheremail', first_name: @user.first_name, last_name: @user.last_name, password: @user.password,password_confirmation: @user.password, username: 'somethingelse' }
     end
 
     assert_redirected_to user_path(assigns(:user))
@@ -39,7 +41,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_equal 'Please log in to access this page', flash[:notice]
   end
 
-  test "should get edit" do
+  test "should get edit page for loginstatus" do
     #fix login
     session[:user_id] = @user.id
     get :edit, id: @user
@@ -47,11 +49,15 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should update user" do
+    #fix login
+    session[:user_id] = @user.id
     put :update, id: @user, user: { admin_flag: @user.admin_flag, description: @user.description, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password, username: @user.username }
     assert_redirected_to user_path(assigns(:user))
   end
 
-  test "should destroy user" do
+  test "should destroy user for admin" do
+    @user = users(:two)
+    session[:user_id] = @user.id
     assert_difference('User.count', -1) do
       delete :destroy, id: @user
     end

@@ -17,4 +17,4 @@ two:
   last_name: MyString2
   password: MyString2
   description: MyText2
-  admin_flag: false
+  admin_flag: true
