@@ -69,16 +69,25 @@ class PostsController < ApplicationController
   # PUT /posts/1.json
   def update
     @post = Post.find(params[:id])
-    @post.user_id = session[:user_id]
-    respond_to do |format|
-      if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+
+    if @post.user_id == session[:user_id]
+      respond_to do |format|
+        if @post.update_attributes(params[:post])
+          format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @post.errors, status: :unprocessable_entity }
+        end
       end
+
+    else
+      #show unauth
+      logger.warn "Unauthorized access!"
+      redirect_to :action =>  "unauthorized"
     end
+
+
   end
 
   # DELETE /posts/1
