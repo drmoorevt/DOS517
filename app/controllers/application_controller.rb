@@ -8,24 +8,17 @@ class ApplicationController < ActionController::Base
     render :text => "You are not allowed to do that!!! #{flash[:notice]}"
   end
 
-
-
-
-
-
-
-
-
-
   protected
   #ADD PROTECTED METHODS BELOW
 
-
-  def get_popular_posts
-
-    @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
-      order by vote desc, created_at desc
- ")
+  def get_posts(searchString)
+    if searchString
+      @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
+      order by vote desc, created_at desc")
+    else
+      @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
+      order by vote desc, created_at desc")
+    end
 
   end
 

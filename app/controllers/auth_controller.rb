@@ -46,7 +46,7 @@ class AuthController < ApplicationController
     #authorized access page
     logger.info "Accessing user sessionid #{session[:user_id]}"
     @hasadmin = session[:user_admin] == true
-    get_popular_posts
+    get_posts("")
 
   end
 

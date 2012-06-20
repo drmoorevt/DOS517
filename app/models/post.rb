@@ -10,4 +10,15 @@ class Post < ActiveRecord::Base
   validates :title,  :presence => true ,:length => { :maximum => 50 }
   validates :user_id,  :presence => true
 
+  def self.search(query)
+    if params[:query]
+      @posts = Post.search(params[:query])
+    else
+      @posts = []
+    end
+    respond_to do |format|
+      format.html # search.html.erb
+      format.json { render json: @post }
+    end
+  end
 end

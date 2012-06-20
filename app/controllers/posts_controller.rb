@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    get_popular_posts
+    get_posts("")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -95,18 +95,6 @@ class PostsController < ApplicationController
     else
       logger.warn "Unauthorized access!"
       redirect_to "unauthorized"
-    end
-  end
-
-  def search
-    if params[:query]
-      @posts = Post.search(params[:query])
-    else
-      @posts = []
-    end
-    respond_to do |format|
-      format.html # search.html.erb
-      format.json { render json: @posts }
     end
   end
 end
