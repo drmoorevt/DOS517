@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   attr_accessible :admin_flag, :description, :email, :first_name, :last_name, :password, :username ,:password_confirmation
 
-  validates :username,  :presence => true
-  validates :email,  :presence => true
+  validates :username,  :presence => true  , :uniqueness => true
+  validates :email,  :presence => true  ,:uniqueness => true
   validates :password,  :presence => true ,:confirmation => true,:on => :create #add password_confirmation #validate for create action
 
   has_many :posts
