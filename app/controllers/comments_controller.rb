@@ -95,9 +95,9 @@ class CommentsController < ApplicationController
       end
     end
    if @comment.save
-     flash[:notice] = "comments.."
+     flash[:notice] = "SAVED...."
    else
-      flash[:notice] = "Not saved!!!"
+      flash[:notice] = "NOT SAVED !!!"
    end
 
     redirect_to @post
