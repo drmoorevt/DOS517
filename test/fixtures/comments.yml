@@ -2,12 +2,12 @@
 
 one:
   content: MyString
-  title: MyString
+
   user_id: 1
   vote: 1
 
 two:
   content: MyString
-  title: MyString
+
   user_id: 1
   vote: 1
