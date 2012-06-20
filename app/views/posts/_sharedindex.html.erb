@@ -24,11 +24,11 @@
               <%= post.user.username %>
           <% end %>
         </td>
-           <td><%=  post.vote %></td>
+           <td><%= post.vote %></td>
         <td><%= link_to 'Show', post %></td>
 
         <td>
-        <% if session[:user_id] %>
+        <% if session[:user_id] == post.user.id %>
           <%= link_to 'Edit', edit_post_path(post) %>
         <% end %>
         </td>

@@ -11,6 +11,8 @@ class UserTest < ActiveSupport::TestCase
     assert user.errors[:username].any?, "user name cannot be empty"
     assert user.errors[:email].any?, "email cannot be empty"
     assert user.errors[:password].any?, "password cannot be empty"
+    assert user.errors[:first_name].any?, "first_name cannot be empty"
+    assert user.errors[:last_name].any?, "last_name cannot be empty"
   end
 
   test "if password matches correctly" do
@@ -18,20 +20,50 @@ class UserTest < ActiveSupport::TestCase
     user = User.new(
         :username => "abc123",
         :email => "testuser@abc.com",
+        :first_name => "abc",
+        :last_name => "xat",
         :password => mypasswd)
     user.save
     assert user.has_same_password(mypasswd) == true, "password did not match"
     assert user.has_same_password("mypasswd") == false, "password match"
   end
 
-  test "to validate existing user" do
+  test "to validate names and password needn't be unique" do
+    mypasswd = "JKO*(&*("
+    firstname = "Sam"
+    lastname = "jim"
+    username1, username2 = "abc1", "abc2"
+    email1, email2 = "abc1@rad.com", "abc2@rad.com"
+    user1 = User.new(
+        :username => username1,
+        :email => email1,
+        :first_name => firstname,
+        :last_name => lastname,
+        :password => mypasswd)
+    user1.save
+
+    user2 = User.new(
+        :username => username2,
+        :email => email2,
+        :first_name => firstname,
+        :last_name => lastname,
+        :password => mypasswd)
+
+    assert user2.valid?, "failed to create a valid user with same first_name, last_name and password"
+  end
+
+  test "to authenticate an existing user" do
     mypasswd1, mypasswd2 = "N*(&*HJK","M)U*UL"
     username1, username2 = "abc1", "abc2"
     email1, email2 = "abc1@rad.com", "abc2@rad.com"
+    first_name = "alex"
+    last_name = "ron"
 
     user1 = User.new(
         :username => username1,
         :email => email1,
+        :first_name => "abc1",
+        :last_name => "xat1",
         :password => mypasswd1)
     user1.save
 
@@ -44,6 +76,8 @@ class UserTest < ActiveSupport::TestCase
     user2 = User.new(
         :username => username2,
         :email => email2,
+        :first_name => "abc1",
+        :last_name => "xat1",
         :password => mypasswd2)
     user2.save
 
@@ -60,6 +94,8 @@ class UserTest < ActiveSupport::TestCase
     user1 = User.new(
         :username => username1,
         :email => email1,
+        :first_name => "abc1",
+        :last_name => "xat1",
         :password => mypasswd)
 
     assert user1.valid?, "failed to create a valid user"
@@ -68,6 +104,8 @@ class UserTest < ActiveSupport::TestCase
     user2 = User.new(
         :username => username1,
         :email => email2,
+        :first_name => "abc1",
+        :last_name => "xat1",
         :password => mypasswd)
 
     assert user2.invalid?, "failed to validate duplicate username"
@@ -78,6 +116,8 @@ class UserTest < ActiveSupport::TestCase
     user3 = User.new(
         :username => username3,
         :email => email2,
+        :first_name => "abc1",
+        :last_name => "xat1",
         :password => mypasswd)
 
     assert user3.invalid?, "failed to validate duplicate email"

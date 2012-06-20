@@ -9,8 +9,6 @@
 </p>
 
 
-
-
 <%  if @post.user %>
 <p>
   <b>User:</b>
@@ -38,12 +36,12 @@
     <div>
      <%= hidden_field_tag(:post_id,@post.id) %>
 
-
+    <% if !session[:user_id] %>
       Author:<%= text_field_tag :author     %><br />
+     <% end %>
 
-
-      Content:  <%= text_field_tag :content     %><br />
-      <%= submit_tag("Save") %>
+    Content:  <%= text_field_tag :content     %><br />
+    <%= submit_tag("Save") %>
 
     </div>
 

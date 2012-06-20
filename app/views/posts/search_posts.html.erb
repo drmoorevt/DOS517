@@ -26,7 +26,7 @@
         <td><%= link_to 'Show', post %></td>
 
         <td>
-          <% if session[:user_id] %>
+          <% if session[:user_id] == post.user.id %>
               <%= link_to 'Edit', edit_post_path(post) %>
           <% end %>
         </td>
@@ -41,3 +41,5 @@
       </tr>
   <% end %>
 </table>
+
+<%= link_to 'Back', posts_path %>

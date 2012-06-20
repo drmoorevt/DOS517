@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   validates :username,  :presence => true  , :uniqueness => true
   validates :email,  :presence => true  ,:uniqueness => true
   validates :password,  :presence => true ,:confirmation => true,:on => :create #add password_confirmation #validate for create action
+  validates :first_name,  :presence => true
+  validates :last_name,  :presence => true
 
   has_many :posts
 
