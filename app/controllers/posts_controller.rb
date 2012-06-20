@@ -14,6 +14,18 @@ class PostsController < ApplicationController
     end
   end
 
+
+  # POST /search_posts
+  # POST /search_posts/json
+  def search_posts
+    get_posts(params[:search_str])
+
+    respond_to do |format|
+      format.html  # search...
+      format.json { render json: @posts }
+    end
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show

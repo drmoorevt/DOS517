@@ -8,15 +8,19 @@ class ApplicationController < ActionController::Base
     render :text => "You are not allowed to do that!!! #{flash[:notice]}"
   end
 
+
   protected
   #ADD PROTECTED METHODS BELOW
 
+  #find posts by username or partial content and title match
   def get_posts(searchString)
     if searchString
       @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
-      order by vote desc, created_at desc")
+       where content like '%#{searchString}%' or title like '%#{searchString}%'
+       or exists (select username from users where username = '#{searchString}' )
+       order by vote desc, created_at desc")
     else
-      @posts = Post.find_by_sql("select *,(select count(id) from comments where post_id = posts.id) as vote from posts
+      @posts = Post.find_by_sql("select top 10 *,(select count(id) from comments where post_id = posts.id) as vote from posts
       order by vote desc, created_at desc")
     end
 

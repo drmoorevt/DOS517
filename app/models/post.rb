@@ -17,7 +17,7 @@ class Post < ActiveRecord::Base
       @posts = []
     end
     respond_to do |format|
-      format.html # search.html.erb
+      format.html # search_posts.html.erb
       format.json { render json: @post }
     end
   end

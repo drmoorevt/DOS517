@@ -8,6 +8,7 @@ TestDos::Application.routes.draw do
 
   get "posts/get_popular_posts"
 
+  post "posts/search_posts"
   get "auth/login"
 
   get "auth/logout"
