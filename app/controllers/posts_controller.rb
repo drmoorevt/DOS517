@@ -106,7 +106,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post = Post.find(params[:id])
-    if @post.user.id == session[:user_id] or session[:user_id] == 'admin'
+    if @post.user.id == session[:user_id] or session[:user_admin] == true
       @post.destroy
 
       respond_to do |format|
