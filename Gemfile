@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.5'
+gem "heroku"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,6 +14,7 @@ end
 group :production do
   # bundler requires these gems in heroku production
   gem 'pg'
+  gem 'thin'
 end
 
 group :test do

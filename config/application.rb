@@ -59,11 +59,8 @@ module TestDos
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.initialize_on_precompile = true
-
-    config.serve_static_assets = false
-
-    config.assets.compile = true
+    # Heroku requires this to be false
+    config.assets.initialize_on_precompile=false
 
   end
 end
