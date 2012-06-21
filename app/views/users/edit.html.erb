@@ -3,4 +3,10 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<% if session[:user_admin] == true %>
+    <%= link_to 'Back', users_url %>
+<% end %>
+<% if session[:user_admin] != true %>
+    <%= link_to 'Back', posts_url %>
+<% end %>
+
