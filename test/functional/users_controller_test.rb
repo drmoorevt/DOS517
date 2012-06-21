@@ -28,11 +28,19 @@ class UsersControllerTest < ActionController::TestCase
   test "should create user" do
    p @user
     assert_difference('User.count') do
-      post :create, user: { admin_flag: @user.admin_flag, description: @user.description, email: 'anotheremail', first_name: @user.first_name, last_name: @user.last_name, password: @user.password,password_confirmation: @user.password, username: 'somethingelse' }
+      post :create, user: { admin_flag: @user.admin_flag, description: @user.description, email: 'anotheremail@gmail.com', first_name: @user.first_name, last_name: @user.last_name, password: @user.password,password_confirmation: @user.password, username: 'somethingelse' }
     end
 
     assert_redirected_to user_path(assigns(:user))
   end
+
+  test "should fail to create user for email format" do
+    p @user
+
+      post :create, user: { admin_flag: @user.admin_flag, description: @user.description, email: 'anotheremail@', first_name: @user.first_name, last_name: @user.last_name, password: @user.password,password_confirmation: @user.password, username: 'somethingelse' }
+    assert_template 'new'
+  end
+
 
   test "should redirect user for show action if not logged" do
     get :show, id: @user.id

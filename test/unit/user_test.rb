@@ -14,7 +14,21 @@ class UserTest < ActiveSupport::TestCase
     assert user.errors[:first_name].any?, "first_name cannot be empty"
     assert user.errors[:last_name].any?, "last_name cannot be empty"
   end
+  test "email format is wrong" do
+    mypasswd = "h*&JKJ()"
+    user = User.new(
+        :username => "abc123",
+        :email => "testuser@@@",
+        :first_name => "abc",
+        :last_name => "xat",
+        :password => mypasswd,
+        :password_confirmation =>mypasswd)
+    user.save
+    assert user.invalid?
 
+    assert user.errors[:email].any?, "email cannot be empty"
+
+  end
   test "if password matches correctly" do
     mypasswd = "h*&JKJ()"
     user = User.new(

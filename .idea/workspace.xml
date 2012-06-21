@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a2fe75d-a449-49c2-8792-a952e2b7c669" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/test.sqlite3" afterPath="$PROJECT_DIR$/db/test.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/users_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/user_test.rb" afterPath="$PROJECT_DIR$/test/unit/user_test.rb" />
     </list>
     <ignored path="TestDos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,60 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="39" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="512" selection-end="512" vertical-scroll-proportion="-9.153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sharedindex.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="70" selection-start="582" selection-end="582" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="42" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts_controller_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/functional/posts_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="69" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-4.88">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,10 +53,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="78" selection-end="78" vertical-scroll-proportion="0.17957747">
+            <state line="6" column="14" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.9230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="56" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/functional/users_controller_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="19" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.8202995">
               <folding />
             </state>
           </provider>
@@ -140,10 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/search_posts.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/test/unit/comment_test.rb" />
         <option value="$PROJECT_DIR$/app/views/auth/login.html.erb" />
@@ -156,6 +127,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
+        <option value="$PROJECT_DIR$/test/unit/user_test.rb" />
+        <option value="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
       </list>
     </option>
   </component>
@@ -322,6 +297,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestDos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DOS517" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -371,10 +364,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -390,25 +379,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestDos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DOS517" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,57 +476,7 @@
       <recent name="C:\Users\ocansizoglu\RubymineProjects\DOS517\app\views\comments" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.PostsControllerTest">
-    <configuration default="false" name="test_should_get_edit" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="TestDos" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_should_get_edit" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test_should_get_index_for_admin_only" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="TestDos" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_should_get_index_for_admin_only" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_should_fail_to_create_user_for_email_format">
     <configuration default="false" name="UsersControllerTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="TestDos" />
@@ -624,6 +545,56 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/functional/posts_controller_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_should_not_update_post_for_others" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_email_format_is_wrong" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="TestDos" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/unit/user_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_email_format_is_wrong" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_should_fail_to_create_user_for_email_format" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="TestDos" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_should_fail_to_create_user_for_email_format" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
@@ -865,15 +836,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_get_edit" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_get_index_for_admin_only" />
-      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UsersControllerTest" />
-      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.PostsControllerTest" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_not_update_post_for_others" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: TestDos" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: TestDos" />
+      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UsersControllerTest" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.PostsControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_not_update_post_for_others" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Production: TestDos" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Development: TestDos" />
+      <item index="7" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_email_format_is_wrong" />
+      <item index="8" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_fail_to_create_user_for_email_format" />
     </list>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
@@ -1132,11 +1103,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/user.rb</url>
-          <line>28</line>
+          <line>29</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/user.rb</url>
-          <line>22</line>
+          <line>23</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/posts_controller.rb</url>
@@ -1154,55 +1125,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="888" selection-end="888" vertical-scroll-proportion="1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/users_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="656" selection-end="656" vertical-scroll-proportion="-0.07705479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/performance/browsing_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="1354" selection-end="1357" vertical-scroll-proportion="0.57050246">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="512" selection-end="512" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_sharedindex.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="70" selection-start="582" selection-end="582" vertical-scroll-proportion="-5.8846154">
@@ -1261,7 +1183,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="78" selection-end="78" vertical-scroll-proportion="0.17957747">
+        <state line="6" column="14" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="56" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/user_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="661" selection-end="661" vertical-scroll-proportion="0.44444445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/post_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/comment_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="57" selection-start="167" selection-end="167" vertical-scroll-proportion="0.110749185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="59" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.110749185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/users_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="19" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.8202995">
           <folding />
         </state>
       </provider>

@@ -2417,3 +2417,249 @@ Processing by PostsController#update as HTML
 Redirected to http://test.host/posts/980190962
 Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "comments"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:48:07', '2012-06-21 04:48:07', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:48:07', '2012-06-21 04:48:07', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:48:08', '2012-06-21 04:48:08', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:48:08', '2012-06-21 04:48:08', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password", "description", "admin_flag", "id", "created_at", "updated_at") VALUES ('MyString1', 'MyString1@gmail.com', 'MyString1', 'MyString1', 'MyString1', 'MyText1', 'f', 1, '2012-06-21 04:48:08', '2012-06-21 04:48:08')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "email", "first_name", "last_name", "password", "description", "admin_flag", "created_at", "updated_at") VALUES (2, 'MyString2', 'MyString2@gmail.com', 'MyString2', 'MyString2', 'MyString2', 'MyText2', 't', '2012-06-21 04:48:08', '2012-06-21 04:48:08')
+  [1m[36m (93.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "users" 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"anotheremail@gmail.com", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"somethingelse"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."username" = 'somethingelse' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'anotheremail@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password`
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "users" ("admin_flag", "created_at", "description", "email", "first_name", "last_name", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["admin_flag", false], ["created_at", Thu, 21 Jun 2012 04:48:08 UTC +00:00], ["description", "MyText1"], ["email", "anotheremail@gmail.com"], ["first_name", "MyString1"], ["last_name", "MyString1"], ["password", "d4791a199c0197731ffac5678fb6b2b8"], ["updated_at", Thu, 21 Jun 2012 04:48:08 UTC +00:00], ["username", "somethingelse"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/980190963
+Completed 302 Found in 199ms (ActiveRecord: 9.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users
+Completed 302 Found in 65ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"anotheremail@", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"somethingelse"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."username" = 'somethingelse' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'anotheremail@' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/_form.html.erb (5.0ms)
+Completed 200 OK in 140ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/_form.html.erb (3.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" 
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (34.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+request refer /
+Redirected to http://test.host/auth/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"MyString1@gmail.com", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "username"=>"MyString1"}, "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE ("users"."username" = 'MyString1' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'MyString1@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/1
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "comments"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:52:22', '2012-06-21 04:52:22', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:52:22', '2012-06-21 04:52:22', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:52:22', '2012-06-21 04:52:22', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:52:22', '2012-06-21 04:52:22', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password", "description", "admin_flag", "id", "created_at", "updated_at") VALUES ('MyString1', 'MyString1@gmail.com', 'MyString1', 'MyString1', 'MyString1', 'MyText1', 'f', 1, '2012-06-21 04:52:22', '2012-06-21 04:52:22')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "email", "first_name", "last_name", "password", "description", "admin_flag", "created_at", "updated_at") VALUES (2, 'MyString2', 'MyString2@gmail.com', 'MyString2', 'MyString2', 'MyString2', 'MyText2', 't', '2012-06-21 04:52:22', '2012-06-21 04:52:22')
+  [1m[36m (127.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."username" = 'abc123' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'testuser@@@' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."username" = 'abc123' LIMIT 1[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'testuser@@@' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "comments"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:54:02', '2012-06-21 04:54:02', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:54:02', '2012-06-21 04:54:02', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:54:02', '2012-06-21 04:54:02', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:54:02', '2012-06-21 04:54:02', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password", "description", "admin_flag", "id", "created_at", "updated_at") VALUES ('MyString1', 'MyString1@gmail.com', 'MyString1', 'MyString1', 'MyString1', 'MyText1', 'f', 1, '2012-06-21 04:54:02', '2012-06-21 04:54:02')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "email", "first_name", "last_name", "password", "description", "admin_flag", "created_at", "updated_at") VALUES (2, 'MyString2', 'MyString2@gmail.com', 'MyString2', 'MyString2', 'MyString2', 'MyText2', 't', '2012-06-21 04:54:02', '2012-06-21 04:54:02')
+  [1m[36m (95.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"anotheremail@gmail.com", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"somethingelse"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."username" = 'somethingelse' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'anotheremail@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password`
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "users" ("admin_flag", "created_at", "description", "email", "first_name", "last_name", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["admin_flag", false], ["created_at", Thu, 21 Jun 2012 04:54:02 UTC +00:00], ["description", "MyText1"], ["email", "anotheremail@gmail.com"], ["first_name", "MyString1"], ["last_name", "MyString1"], ["password", "d4791a199c0197731ffac5678fb6b2b8"], ["updated_at", Thu, 21 Jun 2012 04:54:02 UTC +00:00], ["username", "somethingelse"]]
+  [1m[36m (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/980190963
+Completed 302 Found in 113ms (ActiveRecord: 9.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"anotheremail@", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"somethingelse"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."username" = 'somethingelse' LIMIT 1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'anotheremail@' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/_form.html.erb (5.0ms)
+Completed 200 OK in 133ms (Views: 124.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/_form.html.erb (22.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" 
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (41.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+request refer /
+Redirected to http://test.host/auth/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"MyString1@gmail.com", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "username"=>"MyString1"}, "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE ("users"."username" = 'MyString1' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'MyString1@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/1
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "comments"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:58:58', '2012-06-21 04:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 04:58:58', '2012-06-21 04:58:58', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:58:58', '2012-06-21 04:58:58', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 04:58:58', '2012-06-21 04:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password", "description", "admin_flag", "id", "created_at", "updated_at") VALUES ('MyString1', 'MyString1@gmail.com', 'MyString1', 'MyString1', 'MyString1', 'MyText1', 'f', 1, '2012-06-21 04:58:58', '2012-06-21 04:58:58')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "email", "first_name", "last_name", "password", "description", "admin_flag", "created_at", "updated_at") VALUES (2, 'MyString2', 'MyString2@gmail.com', 'MyString2', 'MyString2', 'MyString2', 'MyText2', 't', '2012-06-21 04:58:58', '2012-06-21 04:58:58')
+  [1m[36m (196.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"admin_flag"=>false, "description"=>"MyText1", "email"=>"anotheremail@", "first_name"=>"MyString1", "last_name"=>"MyString1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"somethingelse"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."username" = 'somethingelse' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'anotheremail@' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/_form.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/mainlayout (52.0ms)
+Completed 200 OK in 267ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
