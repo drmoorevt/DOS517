@@ -23,7 +23,7 @@
        <li><%=  link_to "Posts", :controller => "posts",:action => "index" %>    </li>
      <% if session[:user_id] %>
 
-         <li><%=  link_to "Profile", :controller => "users",:action => "show" %>  </li>
+         <li><%=  link_to "Profile", :controller => "users", :action => "show", :id => session[:user_id] %>  </li>
         <% if session[:user_admin] %>
            <li><%=  link_to "Users", :controller => "users",:action => "index" %>  </li>
            <li><%=  link_to "Comments", :controller => "comments",:action => "index" %>  </li>
