@@ -101,6 +101,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     secure_user_access
     @user.destroy
+    @user.posts.each{|post| post.destroy}
 
     respond_to do |format|
       format.html { redirect_to users_url }
