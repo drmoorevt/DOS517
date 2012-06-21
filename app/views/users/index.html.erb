@@ -27,12 +27,13 @@
 
        <td><%= link_to 'Show', user %></td>
        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-       <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+       <% if user.username != session[:user_name]  %>
+          <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+       <% end %>
     <% elsif user.username == "admin" && session[:user_name] =="admin" %>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
-
+        <td></td>
     <% end %>
 
 
