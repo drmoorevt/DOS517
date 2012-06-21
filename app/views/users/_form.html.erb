@@ -47,7 +47,7 @@
     <%= f.text_area :description %>
   </div>
         <% end %>
-  <% if session[:user_admin] %>
+  <% if session[:user_admin] && session[:user_id] != @user.id && @user.username != "admin"%>
 
    <div class="field">
     <%= f.label :admin_flag %><br />

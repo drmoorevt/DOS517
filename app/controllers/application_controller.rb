@@ -48,12 +48,14 @@ class ApplicationController < ActionController::Base
     if user
       session[:user_id] = user.id
       session[:user_admin] =user.admin_flag
+      session[:user_name] =user.username
     end
   end
 
   def clear_session
     session[:user_id] = nil
     session[:user_admin] = nil
+    session[:user_name] = nil
   end
 
 end
