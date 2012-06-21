@@ -48,8 +48,7 @@ class AuthController < ApplicationController
     #authorized access page
     logger.info "Accessing user sessionid #{session[:user_id]}"
     @hasadmin = session[:user_admin] == true
-    get_posts("")
-
+    redirect_to posts_url
   end
 
 

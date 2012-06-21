@@ -5,16 +5,5 @@
     <p class="error"><%= flash[:error] %></p>
 <% end %>
 <div id="maincontent">
-
- <% if @hasadmin %>
- <p>Welcome Admin! You have admin access.</p>
-  <% end %>
-
-
-  <div>
-
-    <%= render 'posts/sharedindex' %>
-  </div>
-  <%= link_to 'New Post', new_post_path %>
 </div>
 

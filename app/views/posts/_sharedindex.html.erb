@@ -2,7 +2,9 @@
 <table>
   <tr>
     <%= render 'posts/search' %>
-
+    <% if session[:user_admin] %>
+        <p>Welcome Admin! You have admin access.</p>
+    <% end %>
     <th>Title</th>
     <th>Content</th>
 
@@ -12,6 +14,8 @@
     <th></th>
     <th></th>
   </tr>
+
+  <td>
 
   <% @posts.each do |post| %>
       <tr>
