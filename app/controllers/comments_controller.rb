@@ -94,11 +94,19 @@ class CommentsController < ApplicationController
         @comment.author = "Nobody!!!"
       end
     end
-   if @comment.save
-     flash[:notice] = "SAVED...."
-   else
-      flash[:notice] = "NOT SAVED !!!"
-   end
+
+    #Prevent comments from post's owner
+    if session[:user_id] == @post.user_id
+        flash[:notice] = "You are not supposed to create comment for your own post."
+
+    else
+      if @comment.save
+        flash[:notice] = "SAVED...."
+      else
+        flash[:notice] = "NOT SAVED !!!"
+      end
+    end
+
 
     redirect_to @post
 
@@ -109,8 +117,8 @@ class CommentsController < ApplicationController
   # PUT /comments/1.json
   def update
     @comment = Comment.find(params[:id])
-
-    respond_to do |format|
+    if  session[:user_admin]
+      respond_to do |format|
       if @comment.update_attributes(params[:comment])
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
         format.json { head :no_content }
@@ -118,6 +126,10 @@ class CommentsController < ApplicationController
         format.html { render action: "edit" }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
+      end
+    else
+      flash[:notice] = "Admin can edit comments...."
+      redirect_to @comment
     end
   end
 

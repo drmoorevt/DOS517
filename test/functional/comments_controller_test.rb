@@ -3,9 +3,12 @@ require 'test_helper'
 class CommentsControllerTest < ActionController::TestCase
   setup do
     @comment = comments(:one)
+    @post = posts(:one)
   end
 
-  test "should get index" do
+  test "should get index for admin only" do
+    session[:user_id] = @user.id
+    session[:user_admin] = true
     get :index
     assert_response :success
     assert_not_nil assigns(:comments)
@@ -18,7 +21,7 @@ class CommentsControllerTest < ActionController::TestCase
 
   test "should create comment" do
     assert_difference('Comment.count') do
-      post :create, comment: { content: @comment.content,  user_id: @comment.user_id, vote: @comment.vote }
+      post :create, comment: { content: @comment.content,post_id:@post.id,  user_id: @comment.user_id, vote: @comment.vote }
     end
 
     assert_redirected_to comment_path(assigns(:comment))

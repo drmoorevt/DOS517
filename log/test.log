@@ -2663,3 +2663,73 @@ Processing by UsersController#create as HTML
   Rendered users/new.html.erb within layouts/mainlayout (52.0ms)
 Completed 200 OK in 267ms (Views: 163.0ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "comments"
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 05:11:36', '2012-06-21 05:11:36', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "comments" ("content", "user_id", "vote", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, '2012-06-21 05:11:36', '2012-06-21 05:11:36', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 05:11:36', '2012-06-21 05:11:36', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "posts" ("content", "title", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-06-21 05:11:36', '2012-06-21 05:11:36', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password", "description", "admin_flag", "id", "created_at", "updated_at") VALUES ('MyString1', 'MyString1@gmail.com', 'MyString1', 'MyString1', 'MyString1', 'MyText1', 'f', 1, '2012-06-21 05:11:36', '2012-06-21 05:11:36')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "email", "first_name", "last_name", "password", "description", "admin_flag", "created_at", "updated_at") VALUES (2, 'MyString2', 'MyString2@gmail.com', 'MyString2', 'MyString2', 'MyString2', 'MyText2', 't', '2012-06-21 05:11:36', '2012-06-21 05:11:36')
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "comments" 
+Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"content"=>"MyString", "user_id"=>"1", "vote"=>"1"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "comments" 
+Processing by CommentsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+User is not admin 
+Redirected to http://test.hostunauthorized
+Filter chain halted as :has_admin_access rendered or redirected
+Completed 302 Found in 36ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "comments" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered comments/_form.html.erb (10.0ms)
+Completed 200 OK in 178ms (Views: 176.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+User is not admin 
+Redirected to http://test.hostunauthorized
+Filter chain halted as :has_admin_access rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (4.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommentsController#update as HTML
+  Parameters: {"comment"=>{"content"=>"MyString", "user_id"=>"1", "vote"=>"1"}, "id"=>"980190962"}
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
