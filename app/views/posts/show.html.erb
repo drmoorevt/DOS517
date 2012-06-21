@@ -16,8 +16,11 @@
 </p>
 <% end %>
 
+<fieldset>
+  <legend>Comments</legend>
 
-<h3>Comments</h3>
+
+
 <div class="comments">
 <% @post.comments.each do |c| %>
     <p>
@@ -30,7 +33,7 @@
     </p>
 <% end %>
 
-
+ <b>Add your comment:</b>
 <%= form_tag(  :controller => 'comments') do |f| %>
 
     <div>
@@ -40,7 +43,7 @@
       Author:<%= text_field_tag :author     %><br />
      <% end %>
 
-    Content:  <%= text_field_tag :content     %><br />
+      <%= text_area_tag 'content', nil, :rows => 10, :cols => 25     %><br />
     <%= submit_tag("Save") %>
 
     </div>
@@ -49,7 +52,7 @@
 <% end %>
 
 </div>
-
+</fieldset>
 <% if !@post.user.nil? && @post.user.id == session[:user_id] %>
     <%= link_to 'Edit', edit_post_path(@post) %> |
 <% end %>
