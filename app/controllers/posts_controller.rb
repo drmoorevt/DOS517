@@ -82,7 +82,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
-    if @post.user_id == session[:user_id]
+    if @post.user_id == session[:user_id]  or session[:user_admin] == true
       respond_to do |format|
         if @post.update_attributes(params[:post])
           format.html { redirect_to @post, notice: 'Post was successfully updated.' }

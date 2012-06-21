@@ -67,6 +67,15 @@ class PostsControllerTest < ActionController::TestCase
 
   end
 
+  #we have two users with ids 1 and 2 post belongs to userid 1
+  test "should update post for admin even if not belongs to admin" do
+    session[:user_id] =2
+    session[:user_admin] = true
+    put :update, id: @post.id, post: { content: @post.content, title: @post.title  }
+    assert_redirected_to post_path(assigns(:post))
+
+  end
+
   test "should destroy post if belongs to user" do
     session[:user_id] =@post.user_id
     assert_difference('Post.count', -1) do
