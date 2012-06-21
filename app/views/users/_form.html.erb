@@ -11,10 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </div>
+   <% if @user.username != nil %>
+      <p>
+        <b>Username:</b>
+        <%= @user.username %>
+     </p>
+   <% else %>
+      <div class="field">
+        <%= f.label :username %><br />
+        <%= f.text_field :username %>
+      </div>
+   <% end %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
