@@ -1,0 +1,81 @@
+<h1>Reports for Admin</h1>
+
+
+                     <h2>Top 10 posts</h2>
+<table>
+  <tr>
+
+    <th>Title</th>
+
+    <th>User</th>
+    <th>Vote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <td>
+
+    <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.title %></td>
+
+          <td>
+            <% if post.user && post.user.username %>
+
+
+                <%= post.user.username %>
+            <% end %>
+          </td>
+          <td><%= post.vote %></td>
+          <td><%= link_to 'Show', post %></td>
+
+          <td>
+
+                <%= link_to 'Edit', edit_post_path(post) %>
+
+          </td>
+
+          <td>
+
+                <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
+
+          </td>
+
+        </tr>
+    <% end %>
+    </table>
+
+
+
+
+<h2>Top 10 Users ordered by total posts and then total comments</h2>
+<table>
+  <tr>
+
+    <th>User</th>
+    <th>Total posts</th>
+    <th>Total comments</th>
+    <th>Last Post Activity Date</th>
+    <th>Last Comment Activity Date</th>
+    <th></th>
+
+  </tr>
+
+  <td>
+
+    <% @userstats.each do |user| %>
+        <tr>
+          <td><%= user.username %></td>
+          <td><%= user.totalposts %></td>
+          <td><%= user.totalcomments %></td>
+          <td><%= user.post_date %></td>
+          <td><%= user.comment_date %></td>
+          <td><%= link_to "show", user_path(user.id)   %></td>
+
+
+
+
+        </tr>
+    <% end %>
+    </table>
