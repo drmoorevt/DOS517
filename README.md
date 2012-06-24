@@ -23,5 +23,9 @@ Super Twitty
 
 6.      Other notes (extra-credit functionality implemented, limitations, etc.)
 	    *  Capybara was used for integration testing
+	    *  Good code coverage with functinal tests
+	    *  Fake objects and setup of sessions in tests for session check
+	    *  Backend validation check for the ownership of the posts such as
+	         if @post.user_id == session[:user_id]  or session[:user_admin] == true
 
 ECE517-Project1
