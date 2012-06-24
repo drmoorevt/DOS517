@@ -1,4 +1,6 @@
 TestDos::Application.routes.draw do
+  get "reports/show"
+
   resources :comments
 
 

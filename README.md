@@ -27,5 +27,6 @@ Super Twitty
 	    *  Fake objects and setup of sessions in tests for session check
 	    *  Backend validation check for the ownership of the posts such as
 	         if @post.user_id == session[:user_id]  or session[:user_admin] == true
+	    * user can edit their own post
 
 ECE517-Project1
