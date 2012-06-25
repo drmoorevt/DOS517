@@ -27,6 +27,7 @@
         <% if session[:user_admin] %>
            <li><%=  link_to "Users", :controller => "users",:action => "index" %>  </li>
            <li><%=  link_to "Comments", :controller => "comments",:action => "index" %>  </li>
+           <li><%=  link_to "Reports", :controller => "reports",:action => "show" %>  </li>
         <% end %>
 
      <li><%= link_to 'LogOut', auth_logout_path %>    </li>
