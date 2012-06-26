@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
     @posts = Post.find_by_sql("select *,
                 (select count(id) from comments where post_id = p.id) as vote from posts p where content like '%#{searchString}%' or title like '%#{searchString}%'
       or exists (select username from users where username = '#{searchString}' and id = p.user_id)
-      or        (select content from comments where content like '%#{searchString}%')
+      or exists (select content from comments where content like '%#{searchString}%' and post_id = p.id)
       order by vote desc, created_at desc
       ");
 
