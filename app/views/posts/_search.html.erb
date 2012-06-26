@@ -1,6 +1,5 @@
 <%= form_tag(:action => 'search_posts') do %>
 
 
-    <p>Search by Username or Post's Content or Title:</br> <%= text_field_tag(:search_str) %></p>
-    <%= submit_tag("Search") %>
+    <p>Search Posts by Username, Title or Comment</br> <%= text_field_tag(:search_str) %> <%= submit_tag("Search") %> </p>
 <% end %>

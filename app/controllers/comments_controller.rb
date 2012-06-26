@@ -97,7 +97,7 @@ class CommentsController < ApplicationController
 
     #Prevent comments from post's owner
     if session[:user_id] == @post.user_id
-        flash[:notice] = "You are not supposed to create comment for your own post."
+        flash[:notice] = "You cannot create comment for your own post."
 
     else
       if @comment.save

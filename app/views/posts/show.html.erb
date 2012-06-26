@@ -1,10 +1,9 @@
 <p>
-
- <h2>Title:<%= @post.title %></h2>
+ <h2><%= @post.title %></h2>
 </p>
 
 <p>
-  <b>Content:</b>
+  <b>Description:</b>
   <%= @post.content %>
 </p>
 
@@ -24,7 +23,7 @@
 <div class="comments">
 <% @post.comments.each do |c| %>
     <p>
-      <b><%=h c.author %> said:</b>
+      <b><%=h c.author %> </b> said:
       <%= time_ago_in_words(c.created_at) %> ago
     </p>
     <p><%=  c.title %></p>
@@ -33,23 +32,17 @@
     </p>
 <% end %>
 
- <b>Add your comment:</b>
-<%= form_tag(  :controller => 'comments') do |f| %>
+<% if session[:user_id] %>
+    <b>Add your comment:</b>
+    <%= form_tag(  :controller => 'comments') do |f| %>
 
-    <div>
-     <%= hidden_field_tag(:post_id,@post.id) %>
-
-    <% if !session[:user_id] %>
-      Author:<%= text_field_tag :author     %><br />
-     <% end %>
-
-      <%= text_area_tag 'content', nil, :rows => 10, :cols => 25     %><br />
-    <%= submit_tag("Save") %>
-
-    </div>
-
-
-<% end %>
+        <div>
+        <%= hidden_field_tag(:post_id,@post.id) %>
+        <%= text_area_tag 'content', nil, :rows => 10, :cols => 25     %><br />
+        <%= submit_tag("Save") %>
+        </div>
+    <% end %>
+ <% end %>
 
 </div>
 </fieldset>
