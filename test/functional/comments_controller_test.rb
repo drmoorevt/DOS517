@@ -1,5 +1,8 @@
 require 'test_helper'
+require 'comments_controller'
 
+#reraise any exception that was caught during testing
+class CommentsController; def rescue_action(e) raise e end; end
 class CommentsControllerTest < ActionController::TestCase
   setup do
     @comment = comments(:one)
@@ -20,11 +23,13 @@ class CommentsControllerTest < ActionController::TestCase
   end
 
   test "should create comment" do
+    session[:user_id] = 2
+
     assert_difference('Comment.count') do
-      post :create, comment: { content: @comment.content,post_id:@post.id,  user_id: @comment.user_id, vote: @comment.vote }
+      post :create,  { content: @comment.content, post_id: 1,author: "test" , user_id: 1  }
     end
 
-    assert_redirected_to comment_path(assigns(:comment))
+    assert_redirected_to post_path(1)
   end
 
   test "should show comment" do
@@ -42,7 +47,11 @@ class CommentsControllerTest < ActionController::TestCase
     assert_redirected_to comment_path(assigns(:comment))
   end
 
-  test "should destroy comment" do
+  test "should destroy comment by admin" do
+
+    session[:user_id] =2
+    session[:user_admin] = true
+
     assert_difference('Comment.count', -1) do
       delete :destroy, id: @comment
     end

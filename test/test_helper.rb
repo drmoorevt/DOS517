@@ -10,9 +10,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  require 'capybara/rails'
+#  require 'capybara/rails'
 
   class ActionDispatch::IntegrationTest
-    include Capybara::DSL
+   # include Capybara::DSL
     end
 end

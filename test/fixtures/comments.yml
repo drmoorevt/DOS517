@@ -2,12 +2,14 @@
 
 one:
   content: MyString
-
+  post_id: 1
   user_id: 1
   vote: 1
+  id : 1
 
 two:
   content: MyString
-
+  post_id: 2
   user_id: 1
   vote: 1
+  id: 2
